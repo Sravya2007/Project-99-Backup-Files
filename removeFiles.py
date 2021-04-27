@@ -29,7 +29,7 @@ if os.path.exists(path):
             
             for file in files:
                 filePath = os.path.join(root, file)
-                if(seconds_in_days >= getDateCreated(file)):
+                if(seconds_in_days >= getDateCreated(filePath)):
                     removeFile(filePath)
                     deletedFileCount = deletedFileCount + 1
 
